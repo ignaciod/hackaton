@@ -5,8 +5,17 @@ $(document).ready(function() {
 	var timerId = setInterval(function() {
 		process(false);
 	}, 15000);
+	setInterval(scrollNews, 3000);
 
 });
+
+function scrollNews(){
+    var items = $('#news .card');
+    var lastChild = $('#news .card')[items.length - 1];
+    $('#news').prepend(lastChild);
+    $('#news').css( "top", "-180px" );
+    $('#news').animate({top: 0}, 500, "linear");
+}
 
 function process(first){
 	getData(print, 'info');

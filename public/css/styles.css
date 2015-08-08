@@ -5,9 +5,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-bottom: 5px;
 }
 .card{
-    max-height:140px;
+    max-height:180px;
     overflow:hidden;
-    text-overflow:ellipsis;
 }
 @media (min-width: 768px)
 .col-sm-5 {
