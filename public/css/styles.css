@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 @media (min-width: 768px)
 .col-sm-5 {
     width: 38.666667%;
@@ -39,4 +43,13 @@ img.imgNewsAside {
     height: auto;
     margin-left: -30px;
     margin-top: 25px;
+}
+
+h1.extraFull {
+    font-size: 7em;
+    margin: 0px;
+}
+h1.extraFull {
+    font-size: 7.6em;
+    margin: 0px;
 }
