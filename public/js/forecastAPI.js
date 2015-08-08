@@ -29,11 +29,3 @@ var forecast = (function() {
         getForecast:getForecast
     }
 })();
-
-$(document).ready(function(){
-    $('#btnHola').click(function(event) {
-        forecast.getForecast('-32.5583167', '-55.8117021', function(f) {
-            console.log(f);
-        });
-    });
-});

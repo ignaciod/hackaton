@@ -1,5 +1,5 @@
-function getData(print) {
-	var jqxhr = $.getJSON( "/info" )
+function getData(print, method) {
+	var jqxhr = $.getJSON( "/" + method )
 	  .done(function() {
 	    print(jqxhr.responseJSON);
 	  })
