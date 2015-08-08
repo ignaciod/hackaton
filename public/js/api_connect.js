@@ -1,5 +1,5 @@
-function getData(type, print) {
-	var jqxhr = $.getJSON( " http://localhost:3000/" + type )
+function getData(print) {
+	var jqxhr = $.getJSON( "/info" )
 	  .done(function() {
 	    print(jqxhr.responseJSON);
 	  })

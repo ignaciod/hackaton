@@ -1,25 +1,43 @@
 
 $(document).ready(function() {
-	process();
+	getData(print);
 	/*var timerId = setInterval(function() {
-	    process();
-	}, 10000);*/
+	    getData(print);
+	}, 15000);*/
 });
-
-
-function process(){
-	getData("media", print);
-	getData("info", print);
-}
-
-var cardMock = "{\"media\": [{\"id\": 1,\"type\": \"image\",\"text\": \"noticia 1\",\"url\": \"\",\"from\": \"20150808\",\"to\": \"20150809\",\"displayTime\": 120,\"html\": \"\"},{\"id\": 2,\"type\": \"video\",\"text\": \"la fiesta!\",\"url\": \"\",\"from\": \"20150808 12:00\",\"to\": \"20150809 00:00\",\"displayTime\": 120,\"html\": \"\"}],\"info\": [{\"id\": 1,\"type\": \"text\",\"header\": \"noticia 2\",\"content\": \"la noticia 2\",\"new\": true,\"from\": \"20150808 12:00\",\"to\": \"20150809 16:00\",\"displayTime\": 120,\"html\": \"\"},{\"id\": 2,\"type\": \"textImage\",\"content\": \"cumple años feliz\",\"new\": false,\"from\": \"20150808 00:00\",\"to\": \"20150809 00:00\",\"displayTime\": 120,\"html\": \"\"}]}";
-
 
 function print(cards){
 
+	var now = new Date();
+	var card, from, fromDate, to, toDate;
+	
 	for (var index in cards) {
+		card = cards[index];
 
-		alert(cards[index].text);
+		from = getDate(card.from);
+		to = getDate(card.to);
 
+		if(now > from && now < to){
+
+			alert(card.id);
+					
+			switch(card.type){
+				case "image":
+					break;
+				case "video":
+					break;
+				case "text":
+					break;
+				case "textImage":
+					break;
+				default:
+					break;
+			}
+		}
 	};
+}
+
+function getDate(stringDate){
+	var split = stringDate.split(".");
+	return new Date(split[0], split[1] -1, split[2], split[3], split[4]);
 }
