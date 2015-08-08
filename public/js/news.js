@@ -19,41 +19,43 @@ function process(first){
 
 function print(cards){
 
+	var htmlLeft = "";
+	var htmlRight = "";
+	
 	for (var index in cards) {
 		card = cards[index];
 
 		if (card.type == "forecast") {
 			printForecast(card);
 		} else {
-			printCard(card);
+
+			htmlRight += printCard(card);
 		}
 	};
+
+	if(htmlRight != ""){
+		$('#news').html(htmlRight);
+	}
 }
 
 function printCard(card){
 		var now = new Date();
-		var card, from, fromDate, to, toDate;
+		var from, fromDate, to, toDate, cardHtml = "";
 		
 		from = getDate(card.from);
 		to = getDate(card.to);
 
 		if(now > from && now < to){
-
-			switch(card.type){
-				case "image":
-					break;
-				case "video":
-					break;
-				case "text":
-					break;
-				case "textImage":
-					break;
-				case "person":
-					break;
-				default:
-					break;
+			
+			if(jQuery.inArray(card.type, ["Image","Video"] ) > -1){
+				//print to left
+			}
+			else{
+				cardHtml = getTemplate(card);
 			}
 		}
+
+		return cardHtml;
 }
 
 function printForecast(card) {
