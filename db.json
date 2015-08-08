@@ -21,8 +21,8 @@
     {
       "id": 3,
       "type": "text",
-      "header": "noticia 2",
-      "content": "la noticia 2",
+      "title": "Sabias que?",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "new": true,
       "from": "2015.08.08.12.00",
       "to": "2015.08.09.00.00",
@@ -31,8 +31,22 @@
     {
       "id": 4,
       "type": "textImage",
-      "content": "cumple años feliz",
-      "new": false,
+      "title": "Viernes 07/08",
+      "message1": "Temática nuevas tecnologías",
+      "message2": "Presenta: Chinchu",
+      "url": "/images/peyatalks.png",
+      "new": true,
+      "from": "2015.08.08.00.00",
+      "to": "2015.08.08.12.00",
+      "displayTime": 120
+    },
+    {
+      "id": 6,
+      "type": "person",
+      "title": "Hoy se integra a Mkt",
+      "name": "Dr. Rad",
+      "message": "Welcome to PeYa",
+      "url": "/images/user1.png",
       "from": "2015.08.08.00.00",
       "to": "2015.08.08.12.00",
       "displayTime": 120
