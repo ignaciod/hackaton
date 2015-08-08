@@ -1,16 +1,20 @@
 
 $(document).ready(function() {
 
-	process();
+	process(true);
 	var timerId = setInterval(function() {
-		process();
+		process(false);
 	}, 15000);
 
 });
 
-function process(){
+function process(first){
 	getData(print, 'info');
-	getData(print, 'forecast');
+
+	var now = new Date();
+	if (first || (now.getMinutes() == "0" || now.getMinutes() == "30") && now.getSeconds() < 30) {
+		getData(print, 'forecast');
+	};
 }
 
 function print(cards){
