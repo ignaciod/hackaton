@@ -10,11 +10,13 @@ $(document).ready(function() {
 function process(){
 	//var cards = getCards(); //js objects
 	var cards = jQuery.parseJSON(cardMock);
-	var media = cards["media"];
-	var info = cards["media"];
+	var media = cards.media;
+	var info = cards.info;
 
-	for (var i = cards.length - 1; i >= 0; i--) {
-		cards[i]
+	for (var index in media) {
+
+		alert(media[index].text);
+
 	};
 }
 
