@@ -59,7 +59,9 @@ function printCard(card){
 }
 
 function printForecast(card) {
-	
+	forecast.getForecast(card.lat, card.lng, function(result){
+		//TODO: display the forecast using card.name, result.temperature, result.max, result.min & result.icon (optional)
+	});
 }
 
 function getDate(stringDate){
