@@ -7,12 +7,20 @@
 
 	<header>Este es un Header</header>
 	<section id="main">
-		<section></section>
+		<section id="big"></section>
 		<section></section>
 	</section>
 	<footer></footer>
 	<script src="/js/jquery-2.1.4.min.js"></script>
 	<script src="/js/api_connect.js"></script>
 	<script src="/js/news.js?v=0"></script>
+	<script src="/js/handlebars-v3.0.3.js"></script>
+	<script id="tmpTextImage" type="text/x-handlebars-template">
+		<div class="card">
+			<img src="../../images/peyanews.png" alt="Test image">
+			<span>{{text}}</span>
+		</div>
+	</script>
+	<script src="/js/templates.js"></script>
 </body>
 </html>
