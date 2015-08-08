@@ -48,6 +48,8 @@ function printCard(card){
 					break;
 				case "textImage":
 					break;
+				case "person":
+					break;
 				default:
 					break;
 			}
