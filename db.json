@@ -42,17 +42,20 @@
     {
       "name": "Montevideo",
       "lat": "-34.8210983",
-      "lng": "-56.2364387"
+      "lng": "-56.2364387",
+      "type": "forecast"
     },
     {
       "name": "Sao Paulo",
       "lat": "-23.6824124",
-      "lng": "-46.5952992"
+      "lng": "-46.5952992",
+      "type": "forecast"
     },
     {
-      "name": "Argentina",
+      "name": "Buenos Aires",
       "lat": "-34.6158238",
-      "lng": "-58.4332985"
+      "lng": "-58.4332985",
+      "type": "forecast"
     },
   ]
 }

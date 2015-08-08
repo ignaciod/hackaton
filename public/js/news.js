@@ -1,10 +1,15 @@
 
 $(document).ready(function() {
-	getData(print);
+	process();
 	var timerId = setInterval(function() {
-	    getData(print);
+	    process();
 	}, 15000);
 });
+
+function process(){
+	getData(print, 'info');
+	getData(print, 'forecast');
+}
 
 function print(cards){
 
@@ -14,6 +19,15 @@ function print(cards){
 	for (var index in cards) {
 		card = cards[index];
 
+		if (card.type == "forecast") {
+			printForecast(card);
+		} else {
+			printCard(card);
+		}
+	};
+}
+
+function printCard(card){
 		from = getDate(card.from);
 		to = getDate(card.to);
 
@@ -34,7 +48,10 @@ function print(cards){
 					break;
 			}
 		}
-	};
+}
+
+function printForecast(card) {
+	
 }
 
 function getDate(stringDate){
