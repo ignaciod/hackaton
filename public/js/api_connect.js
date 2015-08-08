@@ -1,14 +1,9 @@
-
-var jqxhr = $.getJSON( " http://localhost:3000/info", function(data) { 
-	$.each(data, function(idx, obj) {
-	alert(obj.content);
-});
-})
-  .done(function() {
-    console.log( 'done' );   
-  })
-  .fail(function() {
-     alert( 'error' );
-  });
-  
-
+function getData(type, print) {
+	var jqxhr = $.getJSON( " http://localhost:3000/" + type )
+	  .done(function() {
+	    print(jqxhr.responseJSON);
+	  })
+	  .fail(function() {
+	     //alert( 'error' );
+	  });
+}
