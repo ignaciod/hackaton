@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+@media (min-width: 768px)
+.col-sm-5 {
+    width: 38.666667%;
+}
+@media screen and (min-width: 768px)
+.carousel-caption {
+    right: 5%;
+    left: 5px;
+    padding-bottom: 30px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: -140px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+img.logo {
+    width: 20%;
+    margin-left: 5px;
+}
+
+.navbar-inverse {
+    background-color: #C54A3D;
+    border-color: #C54A3D;
+}
+.img-circle {
+    border-radius: 50%;
+    margin-left: -35px;
+}
+img.imgNewsAside {
+    width: 155%;
+    height: auto;
+    margin-left: -30px;
+    margin-top: 25px;
+}

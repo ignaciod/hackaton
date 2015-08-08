@@ -1,9 +1,9 @@
 
 $(document).ready(function() {
 	getData(print);
-	var timerId = setInterval(function() {
-	    getData(print);
-	}, 15000);
+	// var timerId = setInterval(function() {
+	//     getData(print);
+	// }, 15000);
 });
 
 function print(cards){

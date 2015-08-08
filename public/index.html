@@ -1,27 +1,119 @@
-<!DOCTYPE html>
-<html>
-<head>
-	
-</head>
-<body>	
+<!Doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<header>Este es un Header</header>
-	<section id="main">
-		<section id="big"></section>
-		<section></section>
-	</section>
-	<footer></footer>
-	<script src="/js/jquery-2.1.4.min.js"></script>
-	<script src="/js/api_connect.js"></script>
-	<script src="/js/news.js?v=0"></script>
-	<script src="/js/handlebars-v3.0.3.js"></script>
-	<script src="/js/forecastAPI.js"></script>
-	<script id="tmpTextImage" type="text/x-handlebars-template">
-		<div class="card">
-			<img src="../../images/peyanews.png" alt="Test image">
-			<span>{{text}}</span>
-		</div>
-	</script>
-	<script src="/js/templates.js"></script>
-</body>
-</html>
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>PEYANEWS</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+      <link href="css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+  	<div class="navbar-wrapper">
+  		<div class="container">
+
+  			<nav class="navbar navbar-inverse navbar-static-top">
+  				<div class="container">
+
+  					<div id="navbar" class="navbar-collapse collapse">
+  						<img src="images/peyanews.png" class="logo">
+  					</div>
+  				</div>
+  			</nav>
+
+  		</div>
+  	</div>
+
+	<div id="big">
+      <!-- /<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>-->
+
+    </div><!-- /.carousel -->
+
+
+    
+    <div class="col-sm-5 blog-sidebar">
+    	<div class="col-sm-12">
+    		<h4>About</h4>
+    		<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider">
+
+    	<div class="col-sm-12">
+    		<div class="col-sm-3"><img class="img-circle left" src="images/user1.png" alt="Generic placeholder image" width="140" height="140">
+    		</div>
+    		<div class="col-sm-9">
+    			<h3>Hoy es el cumple de</h3>
+    			<h2>JUAN PEREZ PEREZ</h2>
+    			<h4>FELICIDADES!</h4> 
+    		</div>  
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider">
+
+    	<div class="col-sm-12">
+    		<div class="col-sm-3"><img class="left" src="images/peyatalks.png" alt="Generic placeholder image" width="140" height="140">
+    		</div>
+    		<div class="col-sm-9">
+    			<h4>titulo de PeyaTalk</h4>
+    			<p>Donec ullamcorper nulla non metus auctor fringilla</p>
+    			<p>Expone: Juan Rodriguez</p>
+    		</div>  
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider">
+
+    	<div class="col-sm-12">
+    		<h2 class="featurette-heading">Sabías que...</h2>
+    		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider">
+
+    </div>
+    
+
+    <footer class="row col-sm-12">
+    	<p>© 2015 Hackathon · PEDIDOS YA ·</p>
+    </footer>
+    
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>    
+    <script src="/js/api_connect.js"></script>
+    <script src="/js/news.js?v=0"></script>
+    <script src="/js/handlebars-v3.0.3.js"></script>
+    <script src="/js/forecastAPI.js"></script>
+    <script id="tmpTextImage" type="text/x-handlebars-template">
+    <div class="card">
+    <img src="../../images/peyanews.png" alt="Test image">
+    <span>{{text}}</span>
+    </div>
+    </script>
+    <script src="/js/templates.js"></script>
+
+</body></html>
+
