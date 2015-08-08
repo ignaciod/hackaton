@@ -1,6 +1,5 @@
-var template = (function(){
+function getTemplate(data){
   var theCompiledHtml = '';
-  var _getTemplate = function (data) {
 
     var el = $('#tmp'+data.type);
     
@@ -11,11 +10,6 @@ var template = (function(){
     var theTemplate = Handlebars.compile(theTemplateScript);
     // Pass our data to the template
     theCompiledHtml = theTemplate(data);
-    
-    return theCompiledHtml;
-  };
-  return {
-    get:_getTemplate()
-  }
-})();
 
+    return theCompiledHtml;
+}
