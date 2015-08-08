@@ -1,10 +1,10 @@
 
 $(document).ready(function() {
 
-	getData(print);
-	// var timerId = setInterval(function() {
-	//     getData(print);
-	// }, 15000);
+	process();
+	var timerId = setInterval(function() {
+		process();
+	}, 15000);
 
 });
 
@@ -15,9 +15,6 @@ function process(){
 
 function print(cards){
 
-	var now = new Date();
-	var card, from, fromDate, to, toDate;
-	
 	for (var index in cards) {
 		card = cards[index];
 
@@ -30,13 +27,14 @@ function print(cards){
 }
 
 function printCard(card){
+		var now = new Date();
+		var card, from, fromDate, to, toDate;
+		
 		from = getDate(card.from);
 		to = getDate(card.to);
 
 		if(now > from && now < to){
 
-			alert(card.id);
-					
 			switch(card.type){
 				case "image":
 					break;
