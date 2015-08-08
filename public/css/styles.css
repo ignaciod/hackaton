@@ -53,3 +53,10 @@ h1.extraFull {
     font-size: 7.6em;
     margin: 0px;
 }
+
+.card{
+    max-height:140px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
