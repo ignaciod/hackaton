@@ -54,15 +54,9 @@
 
 
     
-    <div class="col-sm-5 blog-sidebar">
-    	<div class="col-sm-12">
-    		<h4>About</h4>
-    		<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-    	</div>
+    <div id="news" class="col-sm-5 blog-sidebar">
 
-    	<hr class="col-sm-11 featurette-divider">
-
-    	<div class="col-sm-12">
+    	<!-- <div class="col-sm-12">
     		<div class="col-sm-3"><img class="img-circle left" src="images/user1.png" alt="Generic placeholder image" width="140" height="140">
     		</div>
     		<div class="col-sm-9">
@@ -85,13 +79,14 @@
     	</div>
 
     	<hr class="col-sm-11 featurette-divider">
+    	 -->
 
-    	<div class="col-sm-12">
+    	<!-- <div class="col-sm-12">
     		<h2 class="featurette-heading">Sabías que...</h2>
     		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
     	</div>
 
-    	<hr class="col-sm-11 featurette-divider">
+    	<hr class="col-sm-11 featurette-divider"> -->
 
     </div>
     
@@ -107,12 +102,38 @@
     <script src="/js/news.js?v=0"></script>
     <script src="/js/handlebars-v3.0.3.js"></script>
     <script src="/js/forecastAPI.js"></script>
-    <script id="tmpTextImage" type="text/x-handlebars-template">
-    <div class="card">
-    <img src="../../images/peyanews.png" alt="Test image">
-    <span>{{text}}</span>
-    </div>
+    <script id="tmpPerson" type="text/x-handlebars-template">
+	    <div class="col-sm-12">
+	    	<div class="col-sm-3"><img class="img-circle left" src="{{url}}" alt="Generic placeholder image" width="140" height="140">
+    		</div>
+    		<div class="col-sm-9">
+    			<h3>{{title}}</h3>
+    			<h2>{{name}}</h2>
+    			<h4>{{message}}</h4> 
+    		</div>  
+	    </div>
+	    <hr class="col-sm-11 featurette-divider">
     </script>
+    <script id="tmpTextImage" type="text/x-handlebars-template">
+    	<div class="col-sm-12">
+    		<div class="col-sm-3"><img class="imgNewsAside left" src="{{url}}" alt="Generic placeholder image" width="140" height="140">
+    		</div>
+    		<div class="col-sm-9">
+    			<h4>{{title}}</h4>
+    			<p>{{message1}}</p>
+    			<p>{{message2}}</p>
+    		</div>  
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider">
+    </script>
+    <script id="tmpText" type="text/x-handlebars-template">
+    	<div class="col-sm-12">
+    		<h2 class="featurette-heading">{{title}}</h2>
+    		<p class="lead">{{text}}</p>
+    	</div>
+
+    	<hr class="col-sm-11 featurette-divider"></script>
     <script src="/js/templates.js"></script>
 
 </body></html>
