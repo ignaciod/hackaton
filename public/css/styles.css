@@ -4,6 +4,11 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 0px;
     margin-bottom: 5px;
 }
+.card{
+    max-height:140px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
 @media (min-width: 768px)
 .col-sm-5 {
     width: 38.666667%;
@@ -52,11 +57,4 @@ h1.extraFull {
 h1.extraFull {
     font-size: 7.6em;
     margin: 0px;
-}
-
-.card{
-    max-height:140px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow:ellipsis;
 }
