@@ -76,7 +76,8 @@ function printCard(card){
 
 function printForecast(cards) {
 	var container = $('#forecast-container');
-
+	container.empty();
+	
 	$.each(cards, function(index, el){
 		forecast.getForecast(el.lat, el.lng, el.name, function(result) {
 			var cardHtml = $('<div class="col-sm-4"></div>');
