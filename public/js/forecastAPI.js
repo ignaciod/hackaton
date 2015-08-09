@@ -11,11 +11,12 @@ var forecast = (function() {
     		type: 'GET',
     		dataType: 'jsonp',
     		data: params,
+            async: false
     	})
     	.done(function(data) {
             if (callback instanceof Function) {
-                var obj = { type: 'Forecast', temperature: data.currently.temperature, max: data.daily.data[0].temperatureMax,
-                            min: data.daily.data[0].temperatureMin, icon: data.currently.icon, name: name };
+                var obj = { type: 'Forecast', temperature: Math.floor(data.currently.temperature), max: Math.floor(data.daily.data[0].temperatureMax),
+                            min: Math.floor(data.daily.data[0].temperatureMin), icon: data.currently.icon, name: name };
 
                 callback(obj);
             }
