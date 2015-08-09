@@ -75,7 +75,14 @@ function printCard(card){
 		if(now > from && now < to){
 			
 			if(jQuery.inArray(card.type, ["Image","Video"] ) > -1){
-				//print to left
+				if(card.type == "Image"){
+					$("#myCarousel").show();
+					$("#video").hide();
+				}
+				else {
+					$("#myCarousel").hide();
+					$("#video").show();
+				}
 			}
 			else{
 				cardHtml = getTemplate(card);

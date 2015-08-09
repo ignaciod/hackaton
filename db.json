@@ -10,24 +10,6 @@
       "displayTime": 120
     },
     {
-      "id": 1,
-      "type": "Image",
-      "text": "noticia 1",
-      "url": "",
-      "from": "2015.08.08.12.00",
-      "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
-      "id": 2,
-      "type": "Video",
-      "text": "la fiesta!",
-      "url": "",
-      "from": "2015.08.08.12.00",
-      "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
       "id": 4,
       "type": "TextImage",
       "title": "Viernes 07/08",
@@ -40,12 +22,23 @@
       "displayTime": 120
     },
     {
-      "id": 6,
-      "type": "Person",
-      "title": "Hoy se integra a Mkt",
-      "name": "Dr. Rad",
-      "message": "Welcome to PeYa",
-      "url": "/images/user1.png",
+      "id": 8,
+      "type": "Text",
+      "title": "Hackthon",
+      "message": "En noticias recientes, el equipo de gamification tuvo que hacer recortes por restricciones de presupuesto.",
+      "new": true,
+      "from": "2015.08.08.12.00",
+      "to": "2015.08.10.00.00",
+      "displayTime": 120
+    },
+    {
+      "id": 9,
+      "type": "TextImage",
+      "title": "Viernes 07/08",
+      "message1": "Temática crazy API",
+      "message2": "Presenta: Nico",
+      "url": "/images/peyatalks.png",
+      "new": true,
       "from": "2015.08.08.00.00",
       "to": "2015.08.10.12.00",
       "displayTime": 120
@@ -56,6 +49,26 @@
       "title": "No puedes leer mientras sueñas",
       "message": "Si no estás seguro si estás soñando o no, intenta leer algo. La gran mayoría de las personas son incapaces de leer o de distinguir la hora en un reloj durante un sueño.",
       "new": true,
+      "from": "2015.08.08.12.00",
+      "to": "2015.08.10.00.00",
+      "displayTime": 120
+    },
+    {
+      "id": 5,
+      "type": "Person",
+      "title": "Se busca:",
+      "name": "Daniel Lopez",
+      "message": "Recompensa USD 1.200",
+      "url": "/images/gonza_tortafrita.png",
+      "from": "2015.08.08.00.00",
+      "to": "2015.08.18.12.00",
+      "displayTime": 120
+    },
+    {
+      "id": 2,
+      "type": "Video",
+      "text": "la fiesta!",
+      "url": "",
       "from": "2015.08.08.12.00",
       "to": "2015.08.10.00.00",
       "displayTime": 120
