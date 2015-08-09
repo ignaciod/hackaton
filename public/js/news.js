@@ -67,10 +67,14 @@ function printCard(card){
 				if(card.type == "Image"){
 					$("#myCarousel").show();
 					$("#video").hide();
+					$("#video").html("");
 				}
 				else {
-					$("#myCarousel").hide();
-					$("#video").show();
+					if($("#video").css('display') == "none"){
+						$("#myCarousel").hide();
+						$("#video").show();
+						$("#video").html("<iframe width='890' height='500' src='" + card.url + "' frameborder='0'></iframe>");
+					}
 				}
 			}
 			else{
@@ -90,7 +94,7 @@ function printForecast(cards) {
 			var cardHtml = $('<div class="col-sm-4"></div>');
 			var span = $('<span class="forecast"></span>')
 
-			span.append(result.name + ': ' + result.temperature + '°C (max: ' + result.max + '°C / min: ' + result.min + '°C)');
+			span.append('<h4 class="">' +result.name + ': ' + result.temperature + '°</h4> ' + result.max + '° ' + result.min + '°');
 			cardHtml.append(span);
 			container.append(cardHtml);
 		});
