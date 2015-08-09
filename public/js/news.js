@@ -1,3 +1,4 @@
+var htmlForecast = "";
 
 $(document).ready(function() {
 
@@ -22,6 +23,7 @@ function process(first){
 
 	var now = new Date();
 	if (first || (now.getMinutes() == "0" || now.getMinutes() == "30") && now.getSeconds() < 30) {
+		htmlForecast = "";
 		getData(print, 'forecast');
 	};
 }
@@ -35,12 +37,16 @@ function print(cards){
 		card = cards[index];
 
 		if (card.type == "forecast") {
-			printForecast(card);
+			htmlForecast += printForecast(card);
 		} else {
 
 			htmlRight += printCard(card);
 		}
 	};
+
+	if(htmlForecast && htmlRight){
+		htmlRight = htmlRight + htmlForecast;
+	}
 
 	if(htmlRight != ""){
 		$('#news').html(htmlRight);
@@ -68,9 +74,13 @@ function printCard(card){
 }
 
 function printForecast(card) {
-	forecast.getForecast(card.lat, card.lng, function(result){
-		//TODO: display the forecast using card.name, result.temperature, result.max, result.min & result.icon (optional)
+	var cardHtml = "";
+
+	forecast.getForecast(card.lat, card.lng, card.name, function(result){
+		cardHtml = getTemplate(result);
 	});
+
+	return cardHtml;
 }
 
 function getDate(stringDate){
