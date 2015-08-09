@@ -80,5 +80,9 @@
       "lng": "-58.4332985",
       "type": "forecast"
     }
-  ]
+  ],
+  "configuration": {
+    "backgroundColor": "#C54A3D",
+    "logo": "images/peyanews.png"
+  }
 }

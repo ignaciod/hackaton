@@ -1,5 +1,4 @@
 var htmlForecast = "";
-
 $(document).ready(function() {
 
 	process(true);
@@ -20,12 +19,18 @@ function scrollNews(){
 
 function process(first){
 	getData(print, 'info');
+	getData(configure, 'configuration');
 
 	var now = new Date();
 	if (first || (now.getMinutes() == "0" || now.getMinutes() == "30") && now.getSeconds() < 30) {
 		htmlForecast = "";
 		getData(print, 'forecast');
 	};
+}
+
+function configure(data){
+	$("*").css("background-color", data.backgroundColor);
+	$(".logo").attr("src", data.logo);
 }
 
 function print(cards){
