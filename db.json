@@ -1,6 +1,15 @@
 {
   "info": [
     {
+      "id": 0,
+      "type": "Image",
+      "text": "noticia 1",
+      "url": "",
+      "from": "2015.08.08.12.00",
+      "to": "2015.08.10.00.00",
+      "displayTime": 120
+    },
+    {
       "id": 1,
       "type": "Image",
       "text": "noticia 1",
@@ -19,20 +28,10 @@
       "displayTime": 120
     },
     {
-      "id": 3,
-      "type": "Text",
-      "title": "Sabias que?",
-      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-      "new": true,
-      "from": "2015.08.08.12.00",
-      "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
       "id": 4,
       "type": "TextImage",
       "title": "Viernes 07/08",
-      "message1": "Temática nuevas tecnologías",
+      "message1": "Temática dibujando en la compu",
       "message2": "Presenta: Chinchu",
       "url": "/images/peyatalks.png",
       "new": true,
@@ -52,24 +51,13 @@
       "displayTime": 120
     },
     {
-      "id": 7,
-      "type": "Number",
-      "title": "Hoy llegamos a",
-      "number": "100.000.000",
-      "message": "pedidos!",
-      "from": "2015.08.08.00.00",
-      "to": "2015.08.10.12.00",
-      "displayTime": 120
-    },
-    {
-      "id": 5,
-      "type": "Person",
-      "title": "Se busca:",
-      "name": "Daniel Lopez",
-      "message": "Recompensa USD 1.200",
-      "url": "/images/gonza_tortafrita.png",
-      "from": "2015.08.08.00.00",
-      "to": "2015.08.18.12.00",
+      "id": 3,
+      "type": "Text",
+      "title": "No puedes leer mientras sueñas",
+      "message": "Si no estás seguro si estás soñando o no, intenta leer algo. La gran mayoría de las personas son incapaces de leer o de distinguir la hora en un reloj durante un sueño.",
+      "new": true,
+      "from": "2015.08.08.12.00",
+      "to": "2015.08.10.00.00",
       "displayTime": 120
     }
   ],
