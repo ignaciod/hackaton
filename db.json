@@ -55,10 +55,21 @@
       "id": 7,
       "type": "Number",
       "title": "Hoy llegamos a",
-      "number": "366.325",
-      "message": "Pedidos casi confirmados",
+      "number": "100.000.000",
+      "message": "pedidos!",
       "from": "2015.08.08.00.00",
       "to": "2015.08.10.12.00",
+      "displayTime": 120
+    },
+    {
+      "id": 5,
+      "type": "Person",
+      "title": "Se busca:",
+      "name": "Daniel Lopez",
+      "message": "Recompensa USD 1.200",
+      "url": "/images/gonza_tortafrita.png",
+      "from": "2015.08.08.00.00",
+      "to": "2015.08.18.12.00",
       "displayTime": 120
     }
   ],

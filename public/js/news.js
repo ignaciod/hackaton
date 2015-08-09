@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var timerId = setInterval(function() {
 		process(false);
 	}, 30000);
-	setInterval(scrollNews, 3000);
+	setInterval(scrollNews, 4000);
 
 });
 
