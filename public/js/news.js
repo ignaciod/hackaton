@@ -1,4 +1,3 @@
-var htmlForecast = "";
 $(document).ready(function() {
 
 	process(true);
@@ -23,8 +22,7 @@ function process(first){
 
 	var now = new Date();
 	if (first || (now.getMinutes() == "0" || now.getMinutes() == "30") && now.getSeconds() < 30) {
-		htmlForecast = "";
-		getData(print, 'forecast');
+		getData(printForecast, 'forecast');
 	};
 }
 
@@ -41,17 +39,8 @@ function print(cards){
 	for (var index in cards) {
 		card = cards[index];
 
-		if (card.type == "forecast") {
-			htmlForecast += printForecast(card);
-		} else {
-
-			htmlRight += printCard(card);
-		}
+		htmlRight += printCard(card);
 	};
-
-	if(htmlForecast && htmlRight){
-		htmlRight = htmlRight + htmlForecast;
-	}
 
 	if(htmlRight != ""){
 		$('#news').html(htmlRight);
@@ -78,14 +67,19 @@ function printCard(card){
 		return cardHtml;
 }
 
-function printForecast(card) {
-	var cardHtml = "";
+function printForecast(cards) {
+	var container = $('#forecast-container');
 
-	forecast.getForecast(card.lat, card.lng, card.name, function(result){
-		cardHtml = getTemplate(result);
+	$.each(cards, function(index, el){
+		forecast.getForecast(el.lat, el.lng, el.name, function(result) {
+			var cardHtml = $('<div class="col-sm-4"></div>');
+			var span = $('<span class="forecast"></span>')
+
+			span.append(result.name + ': ' + result.temperature + '°C (max: ' + result.max + '°C / min: ' + result.min + '°C)');
+			cardHtml.append(span);
+			container.append(cardHtml);
+		});
 	});
-
-	return cardHtml;
 }
 
 function getDate(stringDate){
