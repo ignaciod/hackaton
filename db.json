@@ -65,9 +65,9 @@
       "displayTime": 120
     },
     {
-      "id": 2,
-      "type": "Video",
-      "text": "la fiesta!",
+      "id": 1,
+      "type": "Image",
+      "text": "noticia 1",
       "url": "",
       "from": "2015.08.08.12.00",
       "to": "2015.08.10.00.00",
