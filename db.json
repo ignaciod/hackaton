@@ -1,28 +1,6 @@
 {
   "info": [
     {
-      "id": 4,
-      "type": "TextImage",
-      "title": "Viernes 07/08",
-      "message1": "Temática dibujando en la compu",
-      "message2": "Presenta: Chinchu",
-      "url": "/images/peyatalks.png",
-      "new": true,
-      "from": "2015.08.08.00.00",
-      "to": "2015.08.10.12.00",
-      "displayTime": 120
-    },
-    {
-      "id": 8,
-      "type": "Text",
-      "title": "Hackthon",
-      "message": "En noticias recientes, el equipo de gamification tuvo que hacer recortes por restricciones de presupuesto.",
-      "new": true,
-      "from": "2015.08.08.12.00",
-      "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
       "id": 9,
       "type": "TextImage",
       "title": "Viernes 07/08",
@@ -42,17 +20,6 @@
       "new": true,
       "from": "2015.08.08.12.00",
       "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
-      "id": 5,
-      "type": "Person",
-      "title": "Se busca:",
-      "name": "Daniel Lopez",
-      "message": "Recompensa USD 1.200",
-      "url": "/images/gonza_tortafrita.png",
-      "from": "2015.08.08.00.00",
-      "to": "2015.08.18.12.00",
       "displayTime": 120
     },
     {
