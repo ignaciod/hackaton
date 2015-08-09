@@ -1,15 +1,6 @@
 {
   "info": [
     {
-      "id": 0,
-      "type": "Image",
-      "text": "noticia 1",
-      "url": "",
-      "from": "2015.08.08.12.00",
-      "to": "2015.08.10.00.00",
-      "displayTime": 120
-    },
-    {
       "id": 4,
       "type": "TextImage",
       "title": "Viernes 07/08",
