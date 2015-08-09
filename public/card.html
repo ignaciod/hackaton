@@ -134,19 +134,32 @@
 	    ];
 
 		$(document).ready(function() {
-			var method = 
-				window.location.search.indexOf("add") > -1 ? 
-				"POST" : "DELETE";
-
 			var id = window.location.search.split("=")[1];
-			
-			var card = cards[id];
+			var method;
+			if(window.location.search.indexOf("config") > -1){
+				method = "PUT";
 
-		    $.ajax({
-		    	url: "/info" + (method == "DELETE" ? "/" + card.id : ""),
-		    	data: card,
-		    	method: method
-		    })
+				$.ajax({
+			    	url: "/configuration",
+			    	data: (id == 1 ? 
+						{"backgroundColor": "#C54A3D", "logo": "images/peyanews.png"  } : 
+						{"backgroundColor": "#000000", "logo": "images/evil-corp.jpg" }),
+			    	method: method
+		    	});
+			}
+			else  {
+				method = 
+					window.location.search.indexOf("add") > -1 ? 
+					"POST" : "DELETE";
+				
+				var card = cards[id];
+
+			    $.ajax({
+			    	url: "/info" + (method == "DELETE" ? "/" + card.id : ""),
+			    	data: card,
+			    	method: method
+		    	});
+			}
 		});
 	</script>
 </body>

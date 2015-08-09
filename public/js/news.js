@@ -27,8 +27,15 @@ function process(first){
 }
 
 function configure(data){
-	$("*").css("background-color", data.backgroundColor);
+	$(".navbar").css("background-color", data.backgroundColor);
+	$("#footer").css("background-color", data.backgroundColor);
+	$("#news").css("background-color", data.backgroundColor);
+	$(".carousel").css("background-color", data.backgroundColor);
+	$(".container").css("background-color", data.backgroundColor);
+	$('html, body').css("background-color", data.backgroundColor);
+	$(".navbar-inverse").css("border-color", data.backgroundColor);
 	$(".logo").attr("src", data.logo);
+
 }
 
 function print(cards){
